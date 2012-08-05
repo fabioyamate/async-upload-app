@@ -33,6 +33,7 @@
       </div>
     </div>
 
+    <script src="/javascripts/piecon.min.js"></script>
     <script>
       var control  = document.getElementById('drag-files'),
           uploaded = document.getElementById('uploaded-files'),
@@ -76,6 +77,8 @@
             console.log("Percent loaded: " + percent);
 
             progress.style.width = percent + "%";
+
+            Piecon.setProgress(percent);
           }, false);
           xhrupload.addEventListener("error", function() {
             console.log('error', e);
@@ -90,6 +93,8 @@
             console.log('finished');
             cancel.style.display = "none";
             uploaded.innerHTML = e.target.responseText;
+
+            Piecon.reset();
           }, false);
           xhr.addEventListener("readystatechange", function() {
             console.log('ready');

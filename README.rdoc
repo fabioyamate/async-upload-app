@@ -5,6 +5,8 @@ Basic async upload using Filesystem API and Drag and Drop HTML5 API.
 When starting an upload, it creates a temporary cache of the files, and returns an HTML with the
 cached path, so that it is not necessary to upload again when submitting the form.
 
+Includes integration with Piecon (https://github.com/lipka/piecon) to show progress in favicon.
+
 Tested using ruby 1.9.3-p194
 
 == Getting Started
