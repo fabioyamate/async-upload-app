@@ -1,0 +1,20 @@
+== Async Upload App
+
+Basic async upload using Filesystem API and Drag and Drop HTML5 API.
+
+When starting an upload, it creates a temporary cache of the files, and returns an HTML with the
+cached path, so that it is not necessary to upload again when submitting the form.
+
+Tested using ruby 1.9.3-p194
+
+== Getting Started
+
+  bundle install
+  rackup
+
+== TODO
+
+* upload in batches
+* remove uploaded file
+* when submitting a form, wait for all uploads to finish
+
